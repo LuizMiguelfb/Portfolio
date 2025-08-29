@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      type="icon"
+      href="/img/portfolio-profissional.png"
+    />
+    <script src="temp.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Armata&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Cabeçario -->
+    <head>
+      <div class="container__cabeca">
+        <div class="container__cabecario">
+          <p class="nome">LUIZ MIGUEL FRANCISCO BELMOCK</p>
+          <nav class="navegacao">
+            <ul>
+              <li><a href="#TECNOLOGIA">TECNOLOGIA</a></li>
+              <li><a href="#PORTFOLIO">PORTFÓLIO</a></li>
+              <li><a href="#CONTATO">CONTATO</a></li>
+            </ul>
+          </nav>
+          <div class="container__botao">
+            <button id="tradutor">
+              PT <img src="/img/globo.png" width="30px" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </head>
+
+    <div class="container__pai">
+      <!-- Pág visual -->
+      <div class="container__alinhamento-texto">
+        <div class="container__titulo">
+          <h1>DESENVOLVEDOR<br />FROND-END</h1>
+          <p>
+            Olá, sou Luiz Miguel, estudante de <br /><b
+              >Análise e Desenvolvimento de<br />Sistemas</b
+            >
+            com foco em<br />Desenvolvimento Front-End.
+          </p>
+        </div>
+        <img src="/img/Adobe Express - file.png" class="img__npc" />
+      </div>
+
+      <p class="linha__separadora"></p>
+
+      <!-- Pág Tecnologia -->
+      <div class="container__tecnologia">
+        <h2 id="TECNOLOGIA">TECNOLOGIA</h2>
+        <p>Habilidades, ferramentas e tecnologias que eu uso:</p>
+        <div class="img__tecnologia">
+          <img src="/img/html-5.png.png" alt="Logo HTML" />
+          <img src="/img/css.png.png" alt="Logo CSS" />
+          <img src="/img/js.png.png" alt="Logo JavaScript" />
+          <img src="/img/npm-square-red.png" alt="Logo NPM" />
+          <div>
+            <!-- Div somente para separar as imagens. Está sendo controlada pela div pai. -->
+            <img src="/img/figma.png.png" alt="Logo Figma" />
+            <img src="/img/git.png" alt="Logo GitHub" />
+            <img src="/img/nodejs.png" alt="Logo NodeJS" />
+          </div>
+        </div>
+      </div>
+
+      <p class="linha__separadora"></p>
+
+      <!-- <selection>
+                <h2>PORTFÓLIO</h2>
+            </selection> -->
+
+      <!-- Pág Contato -->
+      <div class="container__pai-contato">
+        <div class="container__01">
+          <h3 id="CONTATO">ENTRE EM CONTATO</h3>
+          <!-- <img src="/img/messenger.png" width="40px" height="40px" /> -->
+        </div>
+
+        <div class="container__corte">
+          <div class="container__02">
+            <div class="email__contato">
+              <h4>CONTATO</h4>
+              <p>miguelfranciscobelmock@gmail.com</p>
+            </div>
+
+            <h4>MIDIA SOCIAL</h4>
+            <div class="img__contato_linkada">
+              <a
+                href="https://www.linkedin.com/in/luiz-miguel-francisco-belmock/"
+                target="_blank"
+                ><img src="/img/business.png" alt="Linkedin" width="70px"
+              /></a>
+              <a href="https://wa.me/5528999510678" target="_blank"
+                ><img src="/img/Whatsapp.png" alt="Whatsapp"
+              /></a>
+              <a href="https://www.instagram.com/luizmiguel_fb/" target="_blank"
+                ><img src="/img/Instagram.png" alt="Instagram"
+              /></a>
+              <a href="https://github.com/LuizMiguelfb" target="_blank"
+                ><img src="/img/GitHub.png" alt="GitHub"
+              /></a>
+            </div>
+          </div>
+
+          <div class="container__03">
+            <h4>FORMULÁRIO DE CONTATO</h4>
+            <form id="form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome"/>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"/>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+
+                <button id="enviar" type="button">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
