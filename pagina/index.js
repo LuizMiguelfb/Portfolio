@@ -4,7 +4,7 @@ tradutorBotao.addEventListener('click', () => {
 })
 
 let gmail = document.querySelector('#form');
-gmail.addEventListener('submit', (e) => { 
+gmail.addEventListener('click', (e) => { 
     e.preventDefault();
 
     emailjs.init({
