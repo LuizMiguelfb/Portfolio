@@ -1,7 +1,7 @@
-let tradutor = document.getElementById('tradutor');
-tradutor.addEventListener('click', function() {
-    window.open("/img/5313f8d34ee82.jpeg", "_self");
-});
+let tradutorBotao = document.getElementById('tradutor');
+tradutorBotao.addEventListener('click', () => {
+    alert('Esse botão está em produção!');
+})
 
 let gmail = document.querySelector('#form');
 gmail.addEventListener('submit', (e) => { 
@@ -30,3 +30,9 @@ limpar.addEventListener('click', () => {
     email.value = '';
     mensagem.value = '';
 })
+
+// Comando temporario
+let temp = document.getElementById('temporario');
+temp.addEventListener('click', function() {
+    alert('Desativado temporariamente!');
+});
