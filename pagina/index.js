@@ -1,8 +1,3 @@
-let tradutorBotao = document.getElementById('tradutor');
-tradutorBotao.addEventListener('click', () => {
-    alert('Esse botão está em produção!');
-})
-
 let gmail = document.querySelector('#form');
 gmail.addEventListener('submit', (e) => { 
     e.preventDefault();
@@ -10,9 +5,10 @@ gmail.addEventListener('submit', (e) => {
     emailjs.init({
         publicKey: 'lhqvIe35GivxFJF0D'
     });
-    form.reset()
+
     emailjs.sendForm("service_w1iv7hg", "template_bfjah0k", form)
-        .then((response) => alert('Mensagem enviada com sucesso!'))
+    .then((response) => alert('Mensagem enviada com sucesso!'))
+    form.reset()
         .catch((error) => {
             console.log(error);
             alert('Erro ao enviar a mensagem!');

@@ -75,7 +75,7 @@ nav a:hover {
   font-size: 21px;
 }
 
-.container__botao {
+/* .container__botao {
   display: flex;
   margin-left: 100px;
 }
@@ -89,8 +89,8 @@ button#tradutor {
   border: solid 2px var(--texto-chamativo-linaer-1);
   border-radius: 80px;
   padding: 0px 5px 0px 7px;
-  font-size: 15px;
-}
+  font-size: 15px; 
+}*/
 
 /* ----------------------------------- pág visual ---------------------------------------------- */
 
@@ -236,7 +236,7 @@ button#tradutor {
 }
 
 #form input, textarea{
-  border: solid 2px var(--fundo-secundaria);
+  border: solid 3px var(--fundo-secundaria);
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.142);
   width: 60vh;
@@ -265,4 +265,17 @@ button#tradutor {
   box-shadow: 0 0 0.75rem white;
 }
 
-/* --------------- tradução para o inglês -------------- */
+/* --------------- rodapé -------------- */
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  font-size: 15px;
+  color: var(--cor-texto-branco);
+  background-color: var(--fundo-primaria);
+}
+
+footer p {
+  margin-left: 50px;
+}
