@@ -4,13 +4,13 @@ tradutorBotao.addEventListener('click', () => {
 })
 
 let gmail = document.querySelector('#form');
-gmail.addEventListener('click', (e) => { 
+gmail.addEventListener('submit', (e) => { 
     e.preventDefault();
 
     emailjs.init({
         publicKey: 'lhqvIe35GivxFJF0D'
     });
-
+    form.reset()
     emailjs.sendForm("service_w1iv7hg", "template_bfjah0k", form)
         .then((response) => alert('Mensagem enviada com sucesso!'))
         .catch((error) => {
@@ -19,17 +19,6 @@ gmail.addEventListener('click', (e) => {
         });
 
 });
-
-const nome = document.getElementById('nome');
-const email = document.getElementById('email');
-const mensagem = document.getElementById('mensagem');
-const limpar = document.getElementById('enviar');
-
-limpar.addEventListener('click', () => {
-    nome.value = ''; 
-    email.value = '';
-    mensagem.value = '';
-})
 
 // Comando temporario
 let temp = document.getElementById('temporario');

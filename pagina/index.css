@@ -238,7 +238,7 @@ button#tradutor {
 #form input, textarea{
   border: solid 2px var(--fundo-secundaria);
   border-radius: 20px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.142);
   width: 60vh;
   height: 5vh;
   color: var(--cor-texto-branco);
