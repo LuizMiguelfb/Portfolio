@@ -10,16 +10,6 @@
   --font-sub-titulo: "Arsenal", sans-serif;
 }
 
-.linha__separadora {
-  display: flex;
-  text-align: center;
-  border: solid 1px white;
-  box-shadow: var(--cor-texto-branco) 1px 0px 10px;
-}
-.container__pai {
-  margin: 10vw;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +21,25 @@ body {
   background-repeat: no-repeat;
 }
 
+section {
+  margin: 0vw 10vw 0vw 10vw;
+  border-bottom: solid 1px var(--cor-texto-branco);
+  /* box-shadow: var(--cor-texto-branco) 1px 0px 10px; */
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+section:not(.Pag_Visual){
+  height: 100vh;
+}
+
+section h2 {
+  font-size: 40px;
+  font-family: var(--font-sub-titulo);
+  color: var(--cor-texto-branco);
+}
 /* ----------------------------- Cabeça da página -------------------------------------- */
 
 .container__cabeca {
@@ -92,12 +101,16 @@ button#tradutor {
 
 /* ----------------------------------- pág visual ---------------------------------------------- */
 
-.container__alinhamento-texto {
-  display: flex;
-  justify-content: space-around;
+.Pag_Visual {
   height: 70vh;
   font-family: var(--font-sub-titulo);
 }
+
+.container__alinhamento-texto {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} 
 
 .container__titulo {
   display: flex;
@@ -126,21 +139,13 @@ button#tradutor {
 }
 
 /* -------------------- Pág tecnologia -------------------------------*/
-.container__tecnologia {
-  margin: 10px;
-  height: 100vh;
-  font-family: var(--font-sub-titulo);
-  color: var(--cor-texto-branco);
-}
-
-.container__tecnologia h2 {
-  font-size: 40px;
-}
 
 .container__tecnologia p {
+  font-family: var(--font-sub-titulo);
+  color: var(--cor-texto-branco);
   font-size: 35px;
+  margin: 60px 0px 50px 0px; 
   text-align: center;
-  margin: 60px 0px 50px 0px;
 }
 
 .img__tecnologia {
@@ -166,7 +171,7 @@ button#tradutor {
   margin-top: 10px;
 }
 
-.container__pai-contato {
+.Container__Contato {
   font-family: var(--font-sub-titulo);
   color: var(--cor-texto-branco);
 }
@@ -267,15 +272,12 @@ button#tradutor {
 
 footer {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   height: 10vh;
-  font-size: 15px;
+  font-size: 3vh;
   color: var(--cor-texto-branco);
   background-color: var(--fundo-primaria);
-}
-
-footer p {
-  margin-left: 50px;
 }
 
 @media /*celular*/(max-width: 431px) {
@@ -292,7 +294,7 @@ footer p {
   }
 
   .container__titulo p{
-    font-size: 1rem;
+    font-size: 2vh;
   }
 
   .container__alinhamento-texto {
@@ -300,7 +302,27 @@ footer p {
   }
 
   .container__tecnologia img{
-    width: 5rem;
-    height: 5rem;
+    width: 9vh;
+    height: 9vh;
   }
+
+  .container__tecnologia {
+    pointer-events: none;
+  }
+
+  .email__contato p{
+    font-size: 5vw;
+  }
+
+  footer {
+    font-size: 1.5vh;
+  }
+
+  footer p{
+    margin: 20px;
+  }
+
+  section:last-of-type{
+  height: 70vh;
+}
 }
